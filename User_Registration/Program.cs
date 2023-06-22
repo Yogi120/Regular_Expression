@@ -19,6 +19,9 @@ namespace User_Registration
 
             Registration Emailid = new Registration();
             Emailid.Email();
+
+            Registration Mobile_num = new Registration();
+            Mobile_num.Mobile();
         }
     }
 }

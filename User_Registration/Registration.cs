@@ -1,19 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace User_Registration
 {
     public class Registration
     {
-        // For getting VALID First Name :
         public void FirstName()
         {
+            // For getting VALID First Name :
+
             string pattern = "^[A-Z][a-zA-Z]{2,}$";
-            // "^[A-Z][a-zA-Z]{2,}$"
+           
             string[] Names = { "Yogesh", "Amit", "rohan" };
 
             Regex myName = new Regex(pattern);
@@ -32,9 +35,10 @@ namespace User_Registration
             }
         }
 
-        // For getting VALID Last Name :
         public void LastName()
         {
+            // For getting VALID Last Name :
+
             string[] Last_name = { "Pal", "thorat", "Kapoor" };
 
             Regex mylast = new Regex("^[A-Z][a-zA-Z]{2,}$");
@@ -54,15 +58,13 @@ namespace User_Registration
              
          }
 
-        // For getting VALID Email Id :
         public void Email()
         {
+            // For getting VALID Email Id :
+
             string[] Emails = { "abc.xyz@bl.co.in", "yogesh.pal@bl.co", "yogesh@gmail.com" };
 
             Regex myEmail = new Regex("[a-z]{3}.[a-z]{3}@[a-z]{2}.[a-z]{2}.[a-z]{2}");
-            // @"^abc\.bl\.co(@xyz\.in)?@.*$"
-            // Regex emailRegex = new Regex(@"^abc\.bl\.co(?:@xyz\.in)?@.*$");
-
 
             foreach (string email in Emails)
             {
@@ -77,6 +79,29 @@ namespace User_Registration
                 }
             }
 
+        }
+
+        public void Mobile()
+        {
+            // Getting Valid Phone number
+
+            string[] Phone_num = {"91 1234567890", "41 9919871988", "01 9984 733212" };
+
+            Regex myPhone = new Regex("[1-9]{2}[ ][0-9]{10}");
+
+            foreach (string phone_num in Phone_num)
+            {
+                if (myPhone.IsMatch(phone_num) == true)
+                {
+                    Console.WriteLine($"{phone_num} : is VALID phone number");
+                }
+
+                else
+                {
+                    Console.WriteLine($"{phone_num} : is INVALID phone number");
+                }
+                    
+            }
         }
     }
 }
