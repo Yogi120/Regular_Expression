@@ -1,0 +1,8 @@
+C:\Users\brijesh.pal\source\repos\User_Registration\User_Registration\bin\Debug\User_Registration.exe.config
+C:\Users\brijesh.pal\source\repos\User_Registration\User_Registration\bin\Debug\User_Registration.exe
+C:\Users\brijesh.pal\source\repos\User_Registration\User_Registration\bin\Debug\User_Registration.pdb
+C:\Users\brijesh.pal\source\repos\User_Registration\User_Registration\obj\Debug\User_Registration.csproj.AssemblyReference.cache
+C:\Users\brijesh.pal\source\repos\User_Registration\User_Registration\obj\Debug\User_Registration.csproj.SuggestedBindingRedirects.cache
+C:\Users\brijesh.pal\source\repos\User_Registration\User_Registration\obj\Debug\User_Registration.csproj.CoreCompileInputs.cache
+C:\Users\brijesh.pal\source\repos\User_Registration\User_Registration\obj\Debug\User_Registration.exe
+C:\Users\brijesh.pal\source\repos\User_Registration\User_Registration\obj\Debug\User_Registration.pdb
