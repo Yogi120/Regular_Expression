@@ -17,6 +17,8 @@ namespace User_Registration
             Registration Lastname = new Registration();
             Lastname.LastName();
 
+            Registration Emailid = new Registration();
+            Emailid.Email();
         }
     }
 }

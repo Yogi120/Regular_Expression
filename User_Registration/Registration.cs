@@ -9,6 +9,7 @@ namespace User_Registration
 {
     public class Registration
     {
+        // For getting VALID First Name :
         public void FirstName()
         {
             string pattern = "^[A-Z][a-zA-Z]{2,}$";
@@ -31,6 +32,7 @@ namespace User_Registration
             }
         }
 
+        // For getting VALID Last Name :
         public void LastName()
         {
             string[] Last_name = { "Pal", "thorat", "Kapoor" };
@@ -51,5 +53,30 @@ namespace User_Registration
             }
              
          }
+
+        // For getting VALID Email Id :
+        public void Email()
+        {
+            string[] Emails = { "abc.xyz@bl.co.in", "yogesh.pal@bl.co", "yogesh@gmail.com" };
+
+            Regex myEmail = new Regex("[a-z]{3}.[a-z]{3}@[a-z]{2}.[a-z]{2}.[a-z]{2}");
+            // @"^abc\.bl\.co(@xyz\.in)?@.*$"
+            // Regex emailRegex = new Regex(@"^abc\.bl\.co(?:@xyz\.in)?@.*$");
+
+
+            foreach (string email in Emails)
+            {
+                if (myEmail.IsMatch(email) == true)
+                {
+                    Console.WriteLine($"{email} : is VALID email");
+                }
+
+                else
+                {
+                    Console.WriteLine($"{email} : is INVALID email");
+                }
+            }
+
+        }
     }
 }
