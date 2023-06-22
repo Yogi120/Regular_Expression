@@ -30,5 +30,26 @@ namespace User_Registration
                 }
             }
         }
+
+        public void LastName()
+        {
+            string[] Last_name = { "Pal", "thorat", "Kapoor" };
+
+            Regex mylast = new Regex("^[A-Z][a-zA-Z]{2,}$");
+
+            foreach (string last_name in Last_name)
+            {
+                if (mylast.IsMatch(last_name) == true)
+                {
+                    Console.WriteLine($"{last_name} is VALID last name");
+                }
+
+                else
+                {
+                    Console.WriteLine($"{last_name} is INVALID last name");
+                }
+            }
+             
+         }
     }
 }

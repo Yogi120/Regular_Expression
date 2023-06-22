@@ -14,6 +14,9 @@ namespace User_Registration
             Registration Firtname = new Registration();
             Firtname.FirstName();
 
+            Registration Lastname = new Registration();
+            Lastname.LastName();
+
         }
     }
 }
