@@ -14,6 +14,14 @@ namespace User_Registration
             Registration Firtname = new Registration();
             Firtname.FirstName();
 
+            Registration Lastname = new Registration();
+            Lastname.LastName();
+
+            Registration Emailid = new Registration();
+            Emailid.Email();
+
+            Registration Mobile_num = new Registration();
+            Mobile_num.Mobile();
         }
     }
 }
