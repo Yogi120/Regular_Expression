@@ -11,8 +11,8 @@ namespace User_Registration
     {
         static void Main(string[] args)
         {
-            Registration Firtname = new Registration();
-            Firtname.FirstName();
+            Registration firstname = new Registration();
+            firstname.FirstName();
 
             Registration Lastname = new Registration();
             Lastname.LastName();
@@ -22,6 +22,9 @@ namespace User_Registration
 
             Registration Mobile_num = new Registration();
             Mobile_num.Mobile();
+
+            Registration mypassword = new Registration();
+            mypassword.Password();
         }
     }
 }
