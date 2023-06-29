@@ -13,7 +13,7 @@ namespace User_Registration
     {
         public void FirstName()
         {
-            // For getting VALID First Name :
+            // For getting VALID First Name : start with cap and has min. 3 char.
 
             string pattern = "^[A-Z][a-zA-Z]{2,}$";
            
@@ -37,7 +37,7 @@ namespace User_Registration
 
         public void LastName()
         {
-            // For getting VALID Last Name :
+            // For getting VALID Last Name : start with cap and has min. 3 char.
 
             string[] Last_name = { "Pal", "thorat", "Kapoor" };
 
@@ -60,7 +60,7 @@ namespace User_Registration
 
         public void Email()
         {
-            // For getting VALID Email Id :
+            // For getting VALID Email Id : 3 mandatory parts and 2 optional with precise @ and . position
 
             string[] Emails = { "abc.xyz@bl.co.in", "yogesh.pal@bl.co", "yogesh@gmail.com" };
 
@@ -83,7 +83,7 @@ namespace User_Registration
 
         public void Mobile()
         {
-            // Getting Valid Phone number
+            // Getting Valid Phone number : Country code follow by space and 10 digit num
 
             string[] Phone_num = {"91 1234567890", "41 9919871988", "01 9984 733212" };
 
@@ -101,6 +101,33 @@ namespace User_Registration
                     Console.WriteLine($"{phone_num} : is INVALID phone number");
                 }
                     
+            }
+        }
+
+        public void Password()
+
+        // password rule.
+        // minimum 8 characters.
+        // should have at least 1 upper case.
+        // should have at least 1 numeric in the password.
+        // has exactly 1 special character
+
+        {
+            string[] Password = { "Someone@1234", "somehas#1234"};
+
+            Regex myPassword = new Regex(@"^(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8}$");
+
+            foreach (string password in Password)
+            {
+                if (myPassword.IsMatch(password) == true)
+                {
+                    Console.WriteLine($"{password} is a VALID password");
+                }
+
+                else
+                {
+                    Console.WriteLine($"{password} is a INVALID password");
+                }
             }
         }
     }
